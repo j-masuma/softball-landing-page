@@ -1,8 +1,11 @@
 import React from 'react'
+import HeroSection from '../components/homeComponents/HeroSection'
 
 function HomePage() {
   return (
-    <div className='underline'>HomePage</div>
+    <div >
+      <HeroSection/>
+    </div>
   )
 }
 
