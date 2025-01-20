@@ -15,16 +15,16 @@ function Header() {
             </button>
         </div>
         <div className='flex gap-2'>
-            <button className=' border-2 border-white px-2 py-1 rounded-full shadow-md text-white '>
+            <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500 '>
                 Home
             </button>
-            <button className=' border-2 border-white px-2 py-1 rounded-full shadow-md text-white '>
+            <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
                 Programs
             </button>
-            <button className=' border-2 border-white px-2 py-1 rounded-full shadow-md text-white '>
+            <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
                 Coaches
             </button>
-            <button className=' border-2 border-white px-2 py-1 rounded-full shadow-md text-white '>
+            <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
                 Scedule
             </button>
             <button className='border-2 border-white rounded-[50%] bg-white p-1'>

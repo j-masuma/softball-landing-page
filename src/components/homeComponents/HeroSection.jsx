@@ -6,13 +6,13 @@ function HeroSection() {
     <div 
     className='h-screen bg-cover -mt-20 m-2 boder-2 rounded-3xl'
     style={{
-        backgroundImage:'url("/assets/images/hero-image.png")',
+        backgroundImage:'url("/assets/images/hero.jpg")',
     }}
     >
         <div className='h-full flex flex-col justify-between text-white mx-4 py-4'>
               <div></div>
               <div>
-                <div className='flex'>
+                <div className='flex border-2 border-transparent w-fit p-1 rounded-full bg-slate-200 bg-opacity-40 '>
                     <div className='w-10 h-10 border-2 rounded-[50%] overflow-hidden'>
                       <img src="/assets/images/profile.png" className=' w-full h-full object-cover ' alt=""/>
                     </div>

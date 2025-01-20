@@ -1,8 +1,64 @@
 import React from 'react'
+import { GoArrowUp } from 'react-icons/go'
+import { TbHeartHandshake } from 'react-icons/tb'
 
 function Footer() {
-  return (
-    <div>Footer</div>
+  return(
+    <div className='bg-black p-8'>
+
+        <div className='px-4 my-8 text-black'>
+                <hr className='border-y-[1px] border-gray-500 '/>
+        </div>
+
+        <div>
+            <button className='flex items-center gap-1 border-2 border-white bg-white px-2 py-1 rounded-full shadow-md '>
+                <span className='border-2 border-yellow-500  bg-yellow-500 rounded-[50%] p-1'>
+                <TbHeartHandshake size={20} />
+                </span>
+                Slugger
+            </button>
+        </div>
+        <div className='flex justify-between items-center  mt-16'>
+            <div className='w-[450px]'>
+              <h1 className='text-gray-200 text-[32px]'>We are dedicated to empowering baseball players of all skill levels. </h1>
+            </div>
+            <div className='w-32 h-32 rounded-3xl overflow-hidden mr-20 '>
+              <img src="/assets/images/footer.png" className='w-full h-full' alt="" />
+            </div>
+        </div>
+
+        <div className='px-4 my-8 text-black'>
+                <hr className='border-y-[0.75px] border-gray-500 '/>
+        </div>
+
+        <div className='flex justify-between text-gray-500 px-4 text-lg'>
+          <p>123 Baseball Lane, Sports City, USA</p>
+          <p>+1(555)123-4567</p>
+          <p>info@gmail.com</p>
+        </div>
+
+        <div className='flex justify-between items-center mt-16'>
+          <div className='text-gray-500 text-sm'>@2025 Sluggers, All right reserves</div>
+          <div className='flex gap-2'>
+                      <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500 '>
+                          Home
+                      </button>
+                      <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
+                          Programs
+                      </button>
+                      <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
+                          Coaches
+                      </button>
+                      <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
+                          Scedule
+                      </button>
+                      <button className='border-2 border-white rounded-[50%] bg-white p-1  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
+                          <GoArrowUp size={25}/>
+                      </button>
+                  </div>
+        </div>
+
+    </div>
   )
 }
 
