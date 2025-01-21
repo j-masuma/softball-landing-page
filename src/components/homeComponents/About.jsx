@@ -10,9 +10,9 @@ function About() {
     <div className='mx-4 my-16 min-h-fit'>
         <div className='flex justify-between items-center'>
             <Section no={'01'} section={'About'}/>
-            <button className='flex items-center text-sm'>
+            <button className='flex items-center text-sm hover:text-yellow-500'>
                 Learn more
-                <GoArrowUpRight size={15} className="text-black" />
+                <GoArrowUpRight size={15} className="" />
             </button>
         </div>
         <div>
@@ -25,7 +25,7 @@ function About() {
                 <span className='w-90% md:w-[75%] lg:60% '>
                     We provide exceptional baseball
 
-                    <span className='inline-flex w-[50px] h-[50px]  rounded-full overflow-hidden bg-cover items-center'>
+                    <span className='inline-flex w-[50px] h-[50px] mx-1 rounded-full overflow-hidden bg-cover items-center'>
                         <img src="/assets/images/profile.png" alt="HeroImage" className="w-full h-full object-cover" />
                     </span>
 
@@ -51,8 +51,8 @@ function About() {
             <div className="flex items-center justify-center gap-4 my-8">
                 {/* Left Line */}
                 <div className="flex items-center">
-                    <div className="h-0.5 bg-gradient-to-l from-yellow-500 to-transparent w-28"></div>
-                    <div className="w-4 h-4 bg-yellow-500 rounded-full"></div>
+                    <div className="h-0.5 bg-gradient-to-l from-yellow-500 to-transparent w-16 xs:w-28"></div>
+                    <div className="w-2 h-2 xs:w-4 xs:h-4 bg-yellow-500 rounded-full"></div>
                 </div>
 
                 {/* Center Icon */}
@@ -67,8 +67,8 @@ function About() {
 
                 {/* Right Line */}
                 <div className="flex items-center">
-                    <div className="w-4 h-4 bg-yellow-500 rounded-full"></div>
-                    <div className="h-0.5 bg-gradient-to-r from-yellow-500 to-transparent w-28"></div>
+                    <div className="w-2 h-2 xs:w-4 xs:h-4 bg-yellow-500 rounded-full"></div>
+                    <div className="h-0.5 bg-gradient-to-r from-yellow-500 to-transparent w-16 xs:w-28"></div>
                 </div>
             
             </div>

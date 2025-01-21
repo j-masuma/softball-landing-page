@@ -23,7 +23,7 @@ function Header() {
             {/* Desktop menu */}
             <div className='hidden md:flex gap-x-4'>
                 
-                <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500 '>
+                <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500 '>
                     Home
                 </button>
                 <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
@@ -42,7 +42,7 @@ function Header() {
 
             {/* cta button */}
             <div className='hidden md:flex'>
-                <button className='flex items-center gap-1 border-2 border-white bg-white px-2 py-1 rounded-full shadow-md '>
+                <button className='flex items-center gap-1 border-2 border-white bg-white hover:border-gray-100 hover:bg-gray-100 px-2 py-1 rounded-full shadow-md '>
                     Free Trial
                     <span className='border-2 border-gray-800  bg-gray-800 rounded-[50%] p-1 text-white'>
                         <GoArrowUpRight size={20}/>
@@ -80,35 +80,35 @@ function Header() {
             <div className="md:hidden block bg-white p-4 py-12 rounded-xl shadow-md absolute top-[-50px] left-0 w-[50%] mt-12">
                 <div className="flex flex-col space-y-4 px-4 py-2">
                     <a
-                        href="#home"
+                        href="/"
                         className="text-gray-600 hover:text-yellow-500"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Home
                     </a>
                     <a
-                        href="#about"
+                        href="/"
                         className="text-gray-600 hover:text-yellow-500"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Program
                     </a>
                     <a
-                        href="#tech-stack"
+                        href="/"
                         className="text-gray-600 hover:text-yellow-500"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Coaches
                     </a>
                     <a
-                        href="#projects"
+                        href="/"
                         className="text-gray-600 hover:text-yellow-500"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Scedule
                     </a>
                     
-                    <button className='w-fit flex items-center gap-1 border-2 -ml-2 border-white bg-white px-2 py-1 rounded-full shadow-lg '>
+                    <button className='w-fit flex items-center gap-1 border-2 -ml-2 border-white bg-white hover:border-gray-100 hover:bg-gray-100 px-2 py-1 rounded-full shadow-lg '>
                         Free Trial
                         <span className='border-2 border-gray-800  bg-gray-800 rounded-[50%] p-1 text-white'>
                             <GoArrowUpRight size={20}/>

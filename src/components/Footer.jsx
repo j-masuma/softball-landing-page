@@ -19,7 +19,7 @@ function Footer() {
             </button>
         </div>
         <div className='md:flex justify-between items-center  mt-16'>
-            <div className='flex justify-center text-center md:text-left  md:w-[50%]'>
+            <div className='flex justify-center text-center md:justify-start md:text-left md:w-[50%]'>
               <h1 className='text-gray-200 text-xl xs:text-2xl md:text-[32px] w-[90%]'>We are dedicated to empowering baseball players of all skill levels. </h1>
             </div>
             <div className='w-32 h-32 rounded-3xl overflow-hidden md:mr-20 my-2 md:my-0 justify-self-center'>
@@ -31,7 +31,7 @@ function Footer() {
                 <hr className='border-y-[0.75px] border-gray-500 '/>
         </div>
 
-        <div className='space-y-2 md:flex justify-between text-gray-500 px-4 text-lg'>
+        <div className='space-y-2 text-center md:flex justify-between text-gray-500 text-md xs:text-lg'>
           <p>123 Baseball Lane, Sports City, USA</p>
           <p>+1(555)123-4567</p>
           <p>info@gmail.com</p>
@@ -39,17 +39,17 @@ function Footer() {
 
         <div className='space-y-4 text-center md:flex justify-between items-center mt-8 md:mt-16'>
           <div className='text-gray-500 text-sm'>@2025 Sluggers, All right reserves</div>
-          <div className='flex gap-2 justify-center'>
-                      <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500 '>
+          <div className='flex gap-1 xs:gap-2 justify-center'>
+                      <button className='text-sm border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500 '>
                           Home
                       </button>
-                      <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
+                      <button className='text-sm border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
                           Programs
                       </button>
-                      <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
+                      <button className='text-sm border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
                           Coaches
                       </button>
-                      <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
+                      <button className='text-sm border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
                           Scedule
                       </button>
                       <button className='border-2 border-white rounded-[50%] bg-white p-1  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
