@@ -16,14 +16,20 @@ function About() {
             </button>
         </div>
         <div>
-            <div className='flex justify-center w-2/3'>
+            <div className='flex justify-center items-center w-[90%] md:w-2/3'>
                 <div className=' h-36 w-36 overflow-hidden rounded-3xl -rotate-45 border-2 border-transparent opacity-55'>
                     <img src="/assets/images/airpods.png"  alt="" />
                 </div>
             </div>
-            <div className='text-center text-[40px] mx-28 text-gray-800 -mt-12'>
-                <span className=''>
-                    We provide exceptional baseball training at <br /> over 
+            <div className='flex justify-center text-center text-2xl xs:text-3xl md:text-4xl text-gray-800 -mt-12 '>
+                <span className='w-90% md:w-[75%] lg:60% '>
+                    We provide exceptional baseball
+
+                    <span className='inline-flex w-[50px] h-[50px]  rounded-full overflow-hidden bg-cover items-center'>
+                        <img src="/assets/images/profile.png" alt="HeroImage" className="w-full h-full object-cover" />
+                    </span>
+
+                     training at over 
                     <span className='inline-flex max-w-fit items-center gap-1 border-2 border-yellow-500 mx-2 bg-yellow-500 px-2 py-1 rounded-full shadow-md text-sm -rotate-12'>
                         <span className='border-2  border-white bg-white rounded-[50%] p-1'>
                         <RxRocket />
