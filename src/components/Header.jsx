@@ -5,9 +5,19 @@ import { TbHeartHandshake } from 'react-icons/tb'
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen]=useState(false);
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
+
     const toggleMenu = () =>{
         setIsMenuOpen(!isMenuOpen);
     }
+    const toggleSearch = () => {
+        setIsSearchOpen(true);
+      };
+    
+      const closeSearch = () => {
+        setIsSearchOpen(false);
+      };
+    
   return (
     <header>
         <nav className='flex justify-between items-center p-4 mt-4 mx-4'>
@@ -23,26 +33,56 @@ function Header() {
             {/* Desktop menu */}
             <div className='hidden md:flex gap-x-4'>
                 
-                <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500 '>
+                <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition-all duration-500 '>
                     Home
                 </button>
-                <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
+                <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition-all duration-500'>
                     Programs
                 </button>
-                <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
+                <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition-all duration-500'>
                     Coaches
                 </button>
-                <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition duration-500'>
+                <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition-all duration-500'>
                     Scedule
                 </button>
-                <button className='border-2 border-white rounded-[50%] bg-white p-1'>
-                    <IoSearchOutline size={25}/>
-                </button>
+                
+
+                <div className="relative flex items-center">
+            {!isSearchOpen && (
+              <button
+                onClick={toggleSearch}
+                className="border-2 border-white rounded-full bg-white hover:border-yellow-500 hover:bg-yellow-500 p-1 transition-all duration-500"
+              >
+                <IoSearchOutline size={25} />
+              </button>
+            )}
+            <div
+              className={`absolute left-0 bg-white px-2 py-1 shadow-md rounded-3xl transition-all duration-500 overflow-hidden flex items-center ${
+                isSearchOpen ? 'w-64 opacity-100' : 'w-0 opacity-0'
+              }`}
+            >
+              <input
+                type="text"
+                placeholder="Search..."
+                className="flex-grow px-2 py-1 outline-none border-none"
+              />
+              <button
+                onClick={closeSearch}
+                className="text-gray-500 hover:text-gray-700 ml-2"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+        
+
+
+
             </div>
 
             {/* cta button */}
             <div className='hidden md:flex'>
-                <button className='flex items-center gap-1 border-2 border-white bg-white hover:border-gray-100 hover:bg-gray-100 px-2 py-1 rounded-full shadow-md '>
+                <button className='flex items-center gap-1 border-2 border-white bg-white hover:border-yellow-500 hover:bg-yellow-500 px-2 py-1 rounded-full shadow-md '>
                     Free Trial
                     <span className='border-2 border-gray-800  bg-gray-800 rounded-[50%] p-1 text-white'>
                         <GoArrowUpRight size={20}/>
@@ -124,3 +164,13 @@ function Header() {
 }
 
 export default Header
+
+
+
+
+
+
+
+
+
+
