@@ -58,7 +58,7 @@ function Testimonial() {
         </div>
 
         {/* Right Section */}
-        <div className="flex flex-col xs:flex-row gap-2 xs:w-full md:gap-4 md:w-3/5">
+        <div className="flex flex-col xs:flex-row gap-4 xs:w-full md:gap-4 md:w-3/5">
           {
             card_data.map((card)=>{
               return(

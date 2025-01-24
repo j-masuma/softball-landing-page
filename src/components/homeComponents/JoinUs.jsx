@@ -38,7 +38,7 @@ function JoinUs() {
       variants={containerVariant}
     >
       <motion.div variants={contentVariant}>
-        <Section no={'03'} section={'Join us'} />
+        <Section no={'04'} section={'Join us'} />
       </motion.div>
 
       <motion.div
