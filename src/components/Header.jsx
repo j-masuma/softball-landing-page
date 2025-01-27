@@ -82,7 +82,7 @@ function Header() {
 
             {/* cta button */}
             <div className='hidden md:flex'>
-                <button className='flex items-center gap-1 border-2 border-white bg-white hover:border-yellow-500 hover:bg-yellow-500 px-2 py-1 rounded-full shadow-md '>
+                <button className='flex items-center gap-1 border-2 border-white bg-white hover:border-yellow-500 hover:bg-yellow-500 px-2 py-1 rounded-full shadow-md transform transition-transform duration-300 hover:scale-110'>
                     Free Trial
                     <span className='border-2 border-gray-800  bg-gray-800 rounded-[50%] p-1 text-white'>
                         <GoArrowUpRight size={20}/>

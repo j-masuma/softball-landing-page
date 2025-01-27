@@ -4,6 +4,7 @@ import Section from './Section';
 import { GoArrowUpRight } from 'react-icons/go';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { CiBaseball } from 'react-icons/ci';
 
 function JoinUs() {
   // Ref for tracking viewport entry
@@ -38,7 +39,7 @@ function JoinUs() {
       variants={containerVariant}
     >
       <motion.div variants={contentVariant}>
-        <Section no={'04'} section={'Join us'} />
+        <Section no={'05'} section={'Join us'} />
       </motion.div>
 
       <motion.div
@@ -52,7 +53,11 @@ function JoinUs() {
           variants={textVariant}
         >
           <h1 className="text-xl xs:text-2xl sm:text-3xl text-center w-[90%] md:w-[80%]">
-            Join the team today and start your journey toward excellence!
+            Join the team today and start 
+            <span className="inline-flex max-w-fit items-center gap-1 border-2 border-yellow-500 mx-2 bg-yellow-500 px-2 py-1 rounded-full shadow-md transform transition-transform duration-300 hover:scale-125 hover:-rotate-12">
+              <CiBaseball size={20} className="animate-bounce"/>
+            </span>
+            your journey toward excellence!
           </h1>
           <p className="justify-center w-[90%] text-center mt-12 text-sm text-gray-500">
             <a

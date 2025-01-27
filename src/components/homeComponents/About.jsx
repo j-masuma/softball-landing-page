@@ -81,8 +81,8 @@ function About() {
               100+
             </span>
             locations, catering to players of all skill levels. From cutting-edge facilities in
-            <span className="inline-flex max-w-fit items-center gap-1 border-2 border-yellow-500 mx-2 bg-yellow-500 px-2 py-1 rounded-full shadow-md">
-              <CiBaseball size={20} />
+            <span className="inline-flex max-w-fit items-center gap-1 border-2 border-yellow-500 mx-2 bg-yellow-500 px-2 py-1 rounded-full shadow-md transform transition-transform duration-300 hover:scale-125 hover:-rotate-12">
+              <CiBaseball size={20} className="animate-bounce "/>
             </span>
             bustling cities to picturesque fields in serene setting to create the
             <span className="text-yellow-500"> perfect environment for honing your skills and enjoying the game you love.</span>
