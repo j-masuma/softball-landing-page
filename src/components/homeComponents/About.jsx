@@ -41,7 +41,7 @@ function About() {
       >
         <Section no={'01'} section={'About'} />
         <motion.button
-          className="flex items-center text-sm hover:text-yellow-500"
+          className="flex items-center text-sm transform transition-tranform duration-300 hover:text-yellow-500"
           variants={itemVariant}
         >
           Learn more
@@ -74,7 +74,7 @@ function About() {
               <img src="/assets/images/profile.png" alt="HeroImage" className="w-full h-full object-cover" />
             </span>
             training at over
-            <span className="inline-flex max-w-fit items-center gap-1 border-2 border-yellow-500 mx-2 bg-yellow-500 px-2 py-1 rounded-full shadow-md text-sm -rotate-12">
+            <span className="inline-flex max-w-fit items-center gap-1 border-2 border-yellow-500 mx-2 bg-yellow-500 px-2 py-1 rounded-full shadow-md text-sm -rotate-12 transform transition-transform duration-300 hover:scale-105 hover:rotate-0">
               <span className="border-2 border-white bg-white rounded-[50%] p-1">
                 <RxRocket />
               </span>
@@ -99,7 +99,7 @@ function About() {
           </div>
           <div className="items-center justify-center p-2 border-2 border-gray-300 rounded-full mx-3">
             <div className="items-center justify-center p-2 border-2 border-gray-400 rounded-full">
-              <div className="items-center justify-center px-1 py-4 border-2 border-gray-600 rounded-full">
+              <div className="items-center justify-center px-1 py-4 border-2 border-gray-600 rounded-full ">
                 <GiCrossedAxes size={32} className="text-black" />
               </div>
             </div>

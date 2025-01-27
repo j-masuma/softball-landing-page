@@ -18,7 +18,7 @@ function HeroSection() {
             }
           });
         },
-        { threshold: 0.2 } // Trigger when 20% of the section is visible
+        { threshold: 0.2 } 
       );
 
       if (sectionRef.current) {
@@ -60,21 +60,21 @@ function HeroSection() {
               }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              <div className="w-10 h-10 border-2 rounded-[50%] overflow-hidden">
+              <div className="w-10 h-10 border-2 rounded-[50%] overflow-hidden transform transition-transform duration-300 hover:scale-110">
                 <img
                   src="/assets/images/profile.png"
                   className=" w-full h-full object-cover "
                   alt=""
                 />
               </div>
-              <div className="w-10 h-10 border-2 rounded-[50%] overflow-hidden -ml-3">
+              <div className="w-10 h-10 border-2 rounded-[50%] overflow-hidden -ml-3 transform transition-transform duration-300 hover:scale-110">
                 <img
                   src="/assets/images/profile.png"
                   className=" w-full h-full object-cover "
                   alt=""
                 />
               </div>
-              <div className="w-10 h-10 border-2 rounded-[50%] overflow-hidden -ml-3">
+              <div className="w-10 h-10 border-2 rounded-[50%] overflow-hidden -ml-3 transform transition-transform duration-300 hover:scale-110">
                 <img
                   src="/assets/images/profile.png"
                   className=" w-full h-full object-cover "
@@ -113,12 +113,12 @@ function HeroSection() {
             <span className="text-3xl md:text-5xl ">
               Join a Passionate Community of Softball Enthusiasts!
               <motion.button
-                className="inline-flex text-sm md:text-[16px] items-center gap-1 border-2 border-black bg-black hover:border-yellow-600 hover:bg-yellow-600 px-2 py-1 rounded-full shadow-md ml-2 md:ml-4 align-middle"
+                className="inline-flex text-sm md:text-[16px] items-center gap-1 border-2 border-black bg-black transform transition-tranform duration-300 hover:border-yellow-600 hover:bg-yellow-600 px-2 py-1 rounded-full shadow-md ml-2 md:ml-4 align-middle"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Join us
-                <span className="border-2 border-white bg-white rounded-full text-white">
+                <span className="border-2 border-white bg-white rounded-full text-white transform transition-tranform duration-300 hover:rotate-90">
                   <GoArrowUpRight
                     size={15}
                     className="text-black md:w-5 md:h-5"

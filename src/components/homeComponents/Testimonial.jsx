@@ -161,7 +161,7 @@ const card_data = [
 
 export default function Testimonial() {
   return (
-    <div className="mx-4 sm:mx-8 mb-8 overflow-x-hidden">
+    <div className="mx-4 sm:mx-8 mb-8 overflow-x-hidden overflow-y-hidden">
       <div className="my-4">
         <Section no={"04"} section={"Testimonial"} />
       </div>
@@ -179,7 +179,7 @@ export default function Testimonial() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] rounded-3xl overflow-hidden object-cover mx-auto lg:mx-0">
+          <div className="w-[80px] sm:w-[150px] h-[80px] sm:h-[150px] rounded-3xl overflow-hidden object-cover mx-auto lg:mx-0">
             <img
               src="/assets/images/join.png"
               className="w-full h-full"
@@ -203,7 +203,7 @@ export default function Testimonial() {
 
         {/* Right Section */}
         <motion.div
-          className="flex justify-center md:justify-end gap-4 w-full md:w-3/4"
+          className="flex justify-center md:justify-end gap-4 w-full md:w-3/4 md:p-4"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}

@@ -32,9 +32,9 @@ function Footer() {
         </div>
 
         <div className='space-y-2 text-center md:flex justify-between text-gray-500 text-md xs:text-lg'>
-          <p>123 Baseball Lane, Sports City, USA</p>
-          <p>+1(555)123-4567</p>
-          <p>info@gmail.com</p>
+          <p className='cursor-pointer transform transition-transform duration-500 hover:scale-105 hover:text-gray-400'>123 Baseball Lane, Sports City, USA</p>
+          <p className='cursor-pointer transform transition-transform duration-500 hover:scale-105 hover:text-gray-400'>+1(555)123-4567</p>
+          <p className='cursor-pointer transform transition-transform duration-500 hover:scale-105 hover:text-gray-400'>info@gmail.com</p>
         </div>
 
         <div className='space-y-4 text-center md:flex justify-between items-center mt-8 md:mt-16'>
