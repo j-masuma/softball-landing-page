@@ -43,12 +43,12 @@ function Programs() {
       {isInView && (
         <>
           <motion.div
-            className="xs:flex flex-col xs:flex-row xs:justify-between gap-2 mb-8"
+            className="xs:flex flex-col xs:flex-row xs:justify-between gap-2 mb-8 mt-8"
             initial="hidden"
             animate="visible"
             variants={fadeInUp}
           >
-            <div className="w-full">
+            <div className="w-full ">
               <Section no={'02'} section={'Program'} />
             </div>
             <h1 className="text-2xl md:text-3xl lg:text-4xl w-full pl-4 mt-2">

@@ -91,7 +91,7 @@ const Schedule = () => {
                   onClick={() => toggleAccordion(index)}
                   className="w-full flex justify-between items-center border-none px-4 py-4 text-left focus:outline-none"
                 >
-                  <span className="text-2xl">
+                  <span className="text-lg xs:text-xl sm:text-2xl">
                     <span className="text-sm text-gray-500">{item.id}.</span>{" "}
                     {item.title}
                   </span>
@@ -120,7 +120,7 @@ const Schedule = () => {
                         View Details
                       </button>
                     </div>
-                    <div className="w-1/3 object-cover overflow-hidden rounded-3xl m-6 mt-0">
+                    <div className="w-1/3 object-cover overflow-hidden rounded-3xl m-0 my-8 xs:m-6 mt-0">
                       <img src={item.img} className="w-full h-full" alt="" />
                     </div>
                   </div>

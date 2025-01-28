@@ -7,7 +7,6 @@ import { useRef } from 'react';
 import { CiBaseball } from 'react-icons/ci';
 
 function JoinUs() {
-  // Ref for tracking viewport entry
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.2 }); 
 
@@ -49,7 +48,7 @@ function JoinUs() {
         variants={contentVariant}
       >
         <motion.div
-          className="bg-white w-[80%] md:w-[55%] lg:w-[40%] px-4 py-6 md:p-8 rounded-3xl flex flex-col justify-between items-center"
+          className="bg-white  w-[80%] md:w-[55%] lg:w-[40%] px-4 py-6 md:p-8 rounded-3xl flex flex-col justify-between items-center"
           variants={textVariant}
         >
           <h1 className="text-xl xs:text-2xl sm:text-3xl text-center w-[90%] md:w-[80%]">
