@@ -116,7 +116,7 @@ const Schedule = () => {
                   <div className="px-4 py-2 flex justify-between gap-2 text-gray-700 bg-white">
                     <div className="w-2/3 flex flex-col gap-2 justify-between">
                       {item.description}
-                      <button className="inline-flex rounded-3xl w-fit border-[1px] border-black text-sm p-2 hover:bg-black hover:text-white">
+                      <button className="inline-flex rounded-3xl w-fit border-[1px] border-black text-sm p-2 transform transition-transform duration-300 hover:bg-black hover:shadow-lg hover:text-white">
                         View Details
                       </button>
                     </div>
@@ -129,7 +129,7 @@ const Schedule = () => {
             ))}
             <hr className="my-2 text-gray-200" />
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end mr-4">
             <button className="inline-flex my-2 w-fit text-sm md:text-[16px] items-center gap-1 border-2 text-white border-black bg-black transform transition-transform duration-300 hover:border-yellow-600 hover:bg-yellow-600 hover:scale-105 px-2 py-1 rounded-full shadow-md ml-2 md:ml-4 align-middle">
               Join us
               <span className="border-2 border-white bg-white rounded-full text-white">

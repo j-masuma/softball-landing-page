@@ -10,7 +10,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 function About() {
-  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.1 }); // Watches for visibility
+  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.1 }); 
   const controls = useAnimation();
 
   React.useEffect(() => {

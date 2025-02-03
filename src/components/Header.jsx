@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { GoArrowUpRight } from 'react-icons/go'
 import { IoSearchOutline } from 'react-icons/io5'
 import { TbHeartHandshake } from 'react-icons/tb'
+import { Link } from 'react-router-dom';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen]=useState(false);
@@ -23,7 +24,7 @@ function Header() {
         <nav className='flex justify-between items-center p-4 mt-4 mx-4'>
             <div>
                 <button className='flex items-center gap-1 border-2 border-white bg-white px-2 py-1 rounded-full shadow-md '>
-                    <span className='border-2 border-yellow-500  bg-yellow-500 rounded-[50%] p-1  '>
+                    <span className='border-2 border-yellow-500  bg-yellow-500 rounded-[50%] p-1  animate-[spin_8s_linear_infinite]'>
                     <TbHeartHandshake size={20} />
                     </span>
                     Slugger
@@ -34,16 +35,16 @@ function Header() {
             <div className='hidden md:flex gap-x-4'>
                 
                 <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition-all duration-500 '>
-                    Home
+                    <Link to={'/'}>Home</Link>
                 </button>
                 <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition-all duration-500'>
-                    Programs
+                    <Link to={'/'}>Programs</Link>
                 </button>
                 <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition-all duration-500'>
-                    Coaches
+                    <Link to={'/'}>Coaches</Link>
                 </button>
                 <button className=' border-[1px] border-white px-2 py-1 rounded-full shadow-md text-white  hover:border-yellow-500 hover:bg-yellow-500 hover:text-gray-200 transition-all duration-500'>
-                    Scedule
+                    <Link to={'/'}>Scedule</Link>
                 </button>
                 
 
@@ -117,7 +118,7 @@ function Header() {
 
          {/* Mobile Menu */}
          {isMenuOpen && (
-            <div className="md:hidden block bg-white p-4 py-12 rounded-xl shadow-md absolute top-[-50px] left-0 w-[50%] mt-12">
+            <div className="md:hidden block bg-white p-4 py-12 rounded-xl shadow-md absolute top-[-50px] left-0 w-[50%] mt-12 z-10">
                 <div className="flex flex-col space-y-4 px-4 py-2">
                     <a
                         href="/"

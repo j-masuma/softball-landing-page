@@ -15,8 +15,8 @@ function HomePage() {
       <Programs/>
       <Schedule/>
       <Testimonial/>
-      <ShowModel/>
       <JoinUs/>
+      <ShowModel/>
     </div>
   )
 }

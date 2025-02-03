@@ -82,8 +82,8 @@ function Programs() {
                   <h1 className="text-xl xs:text-3xl md:text-5xl">
                     Rookie <br /> Ready
                   </h1>
-                  <button className="items-center border-2 border-white bg-white p-3 md:p-6 rounded-full shadow-md align-middle text-black hover:border-black hover:bg-black hover:text-gray-200 transition duration-500">
-                    <GoArrowUpRight className="w-[15px] h-[15px] xs:w-[20px] xs:h-[20px] md:w-[30px] md:h-[30px]" />
+                  <button className="items-center border-2 border-white bg-white p-3 md:p-6 rounded-full shadow-md align-middle text-black hover:border-black hover:bg-black hover:text-gray-200 transform transition-transform duration-500 hover:rotate-90">
+                    <GoArrowUpRight className="w-[15px] h-[15px] xs:w-[20px] xs:h-[20px] md:w-[30px] md:h-[30px] " />
                   </button>
                 </div>
               </div>
@@ -147,10 +147,10 @@ function Programs() {
                 </motion.div>
               </div>
               <div className="flex gap-1 justify-end m-2">
-                <button className="border-2 p-2 md:p-4 rounded-full hover:border-black hover:bg-black hover:text-gray-200 transition duration-500">
+                <button className="border-2 p-2 md:p-4 rounded-full hover:border-black hover:bg-black hover:text-gray-200 transform transition-transform duration-500">
                   <GoChevronLeft size={25} />
                 </button>
-                <button className="border-2 p-2 md:p-4 rounded-full hover:border-black hover:bg-black hover:text-gray-200 transition duration-500">
+                <button className="border-2 p-2 md:p-4 rounded-full hover:border-black hover:bg-black hover:text-gray-200 transform transition-transform  duration-500">
                   <GoChevronRight size={25} />
                 </button>
               </div>

@@ -12,7 +12,7 @@ function Footer() {
 
         <div>
             <button className='flex items-center gap-1 border-2 border-white bg-white px-2 py-1 rounded-full shadow-md '>
-                <span className='border-2 border-yellow-500  bg-yellow-500 rounded-[50%] p-1'>
+                <span className='border-2 border-yellow-500  bg-yellow-500 rounded-[50%] p-1 animate-[spin_8s_linear_infinite]'>
                 <TbHeartHandshake size={20} />
                 </span>
                 Slugger
@@ -22,7 +22,7 @@ function Footer() {
             <div className='flex justify-center text-center md:justify-start md:text-left md:w-[50%]'>
               <h1 className='text-gray-200 text-xl xs:text-2xl md:text-[32px] w-[90%]'>We are dedicated to empowering baseball players of all skill levels. </h1>
             </div>
-            <div className='w-32 h-32 rounded-3xl overflow-hidden md:mr-20 my-2 md:my-0 justify-self-center'>
+            <div className='w-32 h-32 rounded-3xl overflow-hidden md:mr-20 my-2 md:my-0 justify-self-center transorm transition-transform duration-300 hover:scale-105'>
               <img src="/assets/images/footer.png" className='w-full h-full' alt="" />
             </div>
         </div>
