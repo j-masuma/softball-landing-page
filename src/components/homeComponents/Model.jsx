@@ -33,11 +33,11 @@ const FBXModel = ({ url }) => {
 
 function ShowModel() {
   return (
-    <div className="min-h-screen py-4 border-2 border-gray-200 m-3 rounded-3xl">
+    <div className="min-h-fit h-screen  py-4 border-2 border-gray-200 m-3 rounded-3xl">
       <div className="px-2">
         <Section no={"06"} section="Models" />
       </div>
-      <div className="sm:flex h-full items-center text-center sm:text-left">
+      <div className=" h-full flex flex-col sm:flex-row items-center justify-center text-center sm:text-left">
         <div className="sm:w-1/2 lg:px-8 px-8 sm:pr-2 my-8">
           <motion.h1
             className="text-2xl sm:text-3xl lg:text-4xl mt-8 font-semibold lg:w-[80%] mb-8"
@@ -60,7 +60,7 @@ function ShowModel() {
             and polygons that define its shape and structure.
           </motion.p>
         </div>
-        <div className="sm:w-1/2 min-h-fit sm:h-96">
+        <div className="sm:w-1/2 min-h-fit items-center flex justify-center sm:h-96">
           <Canvas camera={{ position: [0, 2, 5] }} className="h-full">
             <ambientLight intensity={0.7} />
             <directionalLight position={[10, 10, 10]} intensity={1.5} />
