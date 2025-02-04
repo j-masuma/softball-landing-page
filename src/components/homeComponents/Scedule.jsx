@@ -75,7 +75,7 @@ const Schedule = () => {
         </div>
 
         {/* Right Content */}
-        <div className="flex flex-col justify-between md:w-[50%]">
+        <div className="flex flex-col justify-between w-[90%] xs:w-[70%] md:w-[50%]">
           <div>
             {data.map((item, index) => (
               <motion.div

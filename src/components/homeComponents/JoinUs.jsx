@@ -10,7 +10,7 @@ function JoinUs() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.2 }); 
 
-  // Variants for animations
+  
   const containerVariant = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 1.2 } },
